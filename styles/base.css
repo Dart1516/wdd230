@@ -1,0 +1,88 @@
+body{
+    font-size: 18px;
+}
+header h1{
+    font-family: 'Merriweather', serif;
+    margin-left: 15%;
+    margin-right: 45%;
+}
+.image_small {
+    width: 150px;
+    height: 150px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 75%;
+}
+.card{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #29252d;
+}
+h3{
+    background-color: #5e3d37;
+    color: white;
+    grid-row: 2/3;
+    margin-top: 0;
+    padding: 10px;
+}
+header{
+    background-color: #5e3d37;
+    display: grid;
+    place-items: center;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    gap: 20px;
+    color: white;
+    grid-template-areas: "image title";
+
+}
+
+main{
+    text-align: center;
+    padding: 8px;
+}
+h2{
+    margin-bottom: 0;
+}
+/*this is or the line*/
+hr{
+    height: 1px;
+    background-color: #5e3d37;
+    margin-top: 0;
+    
+}
+nav{
+    display:grid ;
+    background-color:#29252d ;
+    color: aliceblue;
+    place-items: center;
+    font-size: 26px;
+}
+nav ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.color_link{
+    
+    color: aliceblue;
+    text-decoration:none; /*Remove the decoration*/
+}
+main section ul{
+    text-align: left;
+    list-style: none;
+}
+footer{
+    text-align: center;
+    background-color:#5e3d37;
+    padding: 10px;
+    color: white;
+}
+.brazilFlag{
+    width: 5%;
+    vertical-align: middle;
+}
+nav ul li {
+    margin-bottom: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
+    list-style: none;
+  }
