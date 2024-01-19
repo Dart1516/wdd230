@@ -78,10 +78,8 @@ footer{
     padding: 10px;
     color: white;
 }
-.brazilFlag{
-    width: 5%;
-    vertical-align: middle;
-}
+
+]
 nav ul li {
     margin-bottom: 10px; /* Ajusta el valor según sea necesario para el espacio deseado */
     list-style: none;
