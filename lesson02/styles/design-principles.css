@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono&display=swap');
+
+/*
+*{
+    border: solid 3px green;
+}
+*/
+
+
+body{
+	background-color: #a0c4ce;
+}
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+p{   
+    font-family: 'Roboto Mono', monospace;
+}
+
+header, footer{
+    text-align: center;
+	background-color:#162925 ;
+	color: #c4c7cb;
+	padding: 0.5rem 0.5rem; /*para que cubra todo*/
+    margin: -0.5rem -0.5rem 0; /* para que cubra todo */
+
+}
+
+main {
+
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+	border-radius: 30px;
+	overflow: hidden;
+	margin-bottom: 2rem;
+	
+}
+
+main section h2 {
+	background-color: #313947;
+	color: #a0c4ce;
+	padding: 2rem; /* Para que cuba todo*/
+	margin: -0.5rem -1rem 0; /* Para que cuba todo*/
+}
+
+
+
+section img {
+    width: calc(100% - 1rem); /* Ancho ajustado */
+	
+    margin: 0.5rem; /* Margen 0.5rem en todas las direcciones */
+    display: block; /* Para centrar la imagen */
+    margin-left: auto; /* Auto-margen izquierdo y derecho para centrar */
+    margin-right: auto;
+	border: solid #313947;
+	margin-top: 1rem;
+}
+
+@media  screen and (min-width: 37.5em) {
+    main {
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+
+    }
+
+    main section:nth-child(2) {
+        display: block;
+    }
+
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    main section picture {
+        display: block;
+    }
+
+    main section picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
+}
+
+/* Desktop Views ******************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
