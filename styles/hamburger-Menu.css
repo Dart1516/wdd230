@@ -50,11 +50,10 @@
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open  {
-	display: block;
-	width: 100%;
+	display: flex;
 }
 .open  a {
-	display: block;
+	display: flex;
 }
 
 .active::before {
