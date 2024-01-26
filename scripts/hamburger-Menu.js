@@ -1,23 +1,38 @@
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamButton = document.getElementById('menu');
+//	const hamButton = document.querySelector('#menu'); sirve así como la primera tambien //
+    const navigation = document.querySelector('.navigation');
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+	
+    // Función para alternar la clase 'open' en el menú
+    hamButton.addEventListener('click', () => {
+		navigation.classList.toggle('open');
+		hamButton.classList.toggle('open');
+	});
+    // Event listener para el botón de menú
+    hamButton.addEventListener('click', function() { toggleMenu(); });
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+    // Event listener para el documento que cierra el menú cuando se hace clic fuera de él
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+        const isMenuButton = target === hamButton || hamButton.contains(target);
+        const isNavigation = target === navigation || navigation.contains(target);
+
+        if (!isMenuButton && !isNavigation) {
+            navigation.classList.remove('open');
+        }
+    });
 });
 
-/* EXERCISIO  sin resolver
+
+/*
+el codigo de la clase era así 
+
+	hamButton.addEventListener('click', () => {
+		navigation.classList.toggle('open');
+		hamButton.classList.toggle('open');
+	});
 
 
-
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('_______', () => {
-	navigation._______.toggle('_______');
-	hamButton.classList.toggle('open');
-});
-
-*/
+	*/

@@ -1,101 +1,70 @@
 
+/**{
+    border: green solid;
+}*/
 
-/* small view navigation */
-#menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	
-	
+
+nav{
+    display:grid ;
+    background-color:#29252d ;
+    
+    font-size: 26px;
 }
 
-#menu::before {
-	content: "☰";
+nav ul  {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 0px; /* Ajusta el valor según sea necesario para el espacio deseado */
+    margin-top: 0px;
+    list-style: none;   
 }
 
-#menu.open::before {
-	content: "❎";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-	margin-top: 0; /* Remove default margin */
-	border: 0; /* Remove default border */
-	margin-bottom: 0;
-}
-.navigation  {
-	display: none;
-}
 .navigation  a {
-	display: block;
 	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
 }
-.navigation  a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+.navigation  a:hover{
+	background-color: rgb(58, 63, 68);
 }
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open  {
-	display: flex;
-}
-.open  a {
-	display: flex;
+/*para ocular la linea blanca que sale */
+#menu {
+    border: none;
+    padding: 0;
 }
 
-.active::before {
-	content: "📍 ";
-}
 
-.stuff {
-	margin: .5m;
-	border: 1px solid rgba(0,0,0,.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-	
-}
+/*pantalla de celular*/
+@media screen and (max-width: 640px) {
 
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-	
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
+    #menu {
+        font-size: 1.5rem;
+        padding: 3px 7px 6px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 
-	#menu {
-		display: none; /* hide hamburger button */
-	}
+    .navigation  {
+        display: none;  
+    }
+    #menu::before {
+        content: "☰";
+    }
+    #menu.open::before {
+        content: "X";
+    }
+    .open  {
+        display: block;
+    }
+    .open  a {
+        display: flex;
+        justify-content: center;
+        margin-left: -10%;
+    }
+    .navigation  a:hover{
+        background-color: rgb(58, 63, 68);
+    }
 
-	.navigation {
-		flex-direction: row;
-	}
-
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-	
-	.stuff {
-		margin: 1rem auto;
-	}
 }
