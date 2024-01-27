@@ -1,0 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/magical-markers');
+@import url('https://fonts.cdnfonts.com/css/witch-magic');
+@import url('https://fonts.cdnfonts.com/css/magic-school-one');
+@import url('https://fonts.cdnfonts.com/css/magical-horison');
+
+
+/*Esta son varias maneras de imprimir texto en dorado */
+
+body{
+    background: radial-gradient(ellipse at center, #443501 0%, #000 100%);
+    height: 100%;
+}
+
+.goldLetter1{
+    color: #cfc09f;
+    position: relative;
+    margin: 0;
+    font-size: 10rem;
+    font-weight: 400;
+    transform: scale(1);
+    text-shadow: -1px 0 1px #c6bb9f,
+    0 1px 1px #c6bb9f,
+    5px 5px 10px rgba(0, 0,0,0.4),
+    -5px -5px 10px rgba(0, 0,0,0.4);
+}
+.goldLetter1::before{
+    content: attr(data-heading);
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index:1;
+    background: linear-gradient(
+        to bottom, 
+        #cfc09f 22%, 
+        #634f2c 24%, 
+        #cfc09f 26%, 
+        #cfc09f 27%, 
+        #ffecb3 40%, 
+        #3a2c0f 78%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+}
+
+/*Esta es otra manera*/
+
+.goldLetter2 { 
+    background-image: repeating-linear-gradient(
+        105deg, 
+        #ffb338 1%, 
+        #3e2904 4%,  
+        #ffb338 7%
+        );
+    color: silver;
+    filter: drop-shadow(5px, 15px, #000);
+    transform: scaleY(1.05);
+    position: relative;
+    -webkit-text-stroke: 10px transparent;
+    -webkit-background-clip: text;
+    font-weight: 900;
+
+}
+
+.goldLetter3 {
+    letter-spacing: 5px;
+
+    font-weight: bold;
+    background-image: linear-gradient(
+     to right,
+     #462523 0,
+     #cb9b51 22%, 
+     #f6e27a 45%,
+     #f6f2c0 50%,
+     #f6e27a 55%,
+     #cb9b51 78%,
+     #462523 100%
+     );
+    color:transparent;
+    -webkit-background-clip:text;
+}

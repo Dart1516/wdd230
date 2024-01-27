@@ -1,0 +1,37 @@
+@import url('https://fonts.cdnfonts.com/css/magical-markers');
+@import url('https://fonts.cdnfonts.com/css/witch-magic');
+@import url('https://fonts.cdnfonts.com/css/magic-school-one');
+@import url('https://fonts.cdnfonts.com/css/magical-horison');
+
+
+/**{
+    border: solid rgb(117, 91, 24);
+}*/
+
+
+body{
+
+    background: radial-gradient(ellipse at center, #443501 0%, #000 100%);
+    height: 100%;
+    height: 100vh;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1{ 
+    font-family: 'Magic School One', sans-serif;
+}
+h2{
+    font-family: 'Magical Markers', sans-serif;
+    font-size: xx-large;
+                                                
+}
+h4{
+    font-family: 'Witch Magic', sans-serif;
+    font-size: x-large;
+}
+p, li{
+    font-family: 'Magical Horison', sans-serif;
+    font-size: larger;
+    
+}
