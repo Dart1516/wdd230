@@ -1,0 +1,49 @@
+/*
+*/
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  /*Pseudo-classes and HTML Classes*/
+
+  a.subrallado:hover {   
+    color: blueviolet;
+    font-size: 22px;
+  } 
+  /*Hover on a specific part*/
+
+  div {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  div:hover {
+    background-color: blue;
+  }
+  /*simple tooltip hover*/
+
+  section>div:nth-child(4n) {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+  
+  section>div:hover p {
+    display: block;
+  }

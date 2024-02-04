@@ -1,0 +1,49 @@
+
+/**{
+    border: green solid;
+}
+*/
+
+header{
+    place-items: center;
+    display: grid;
+
+}
+header img{
+
+    width: 20%;
+
+}
+.color_link{
+    color: aliceblue;
+    text-decoration:none; /*Remove the decoration*/
+}
+.img-banner{
+    width: 100%;
+
+}
+
+body{
+    background: radial-gradient(ellipse at center, #866a04 0%, #000 100%);
+    height: 100%;
+    color: white;
+    
+}
+.card{
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    margin-left:  2%;
+    margin-right: 2%;
+}
+footer{
+background-color: black;
+color: wheat;
+text-align: center;
+}
+hr {
+    width: 90%;
+    text-align: center;
+    color: wheat;
+}

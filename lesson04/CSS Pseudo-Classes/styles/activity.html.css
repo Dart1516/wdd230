@@ -1,0 +1,80 @@
+/*Add CSS pseudo-class rule to provide borders for the 'table' (div.datatable) so that the borders of the 'cells' (div.col elements) do not double up. (see example screenshot below)*/
+:root {
+	--bord: 1px solid #777;
+}
+
+.col {
+	border-top: var(--bord);
+	border-left: var(--bord);
+	padding: 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+/*Add CSS pseudo-class rule(s) for the anchor tags to be navy for both active links and visited links.
+
+*/
+a:active,
+a:link,
+a:visited {
+	color: navy;
+}
+
+/*Add a CSS pseudo-class rule for the anchor tags to change to purple when the user hovers over any links.*/
+a:hover {
+	color: purple;
+}
+
+
+
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #eee;
+}
+
+.datatable {
+	width: 200px;
+	margin-top: 2rem;
+    
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	text-align: center;
+}
+
+/*Make the last row of the 'table' have a darker gray background color by using the :last-child pseudo-class.
+Set up a CSS variable for the border value in the :root pseudo-class for the document of 1px solid #777;*/
+.col:nth-child(even) {
+	border-right: var(--bord);
+}
+
+.row:last-child {
+	border-bottom: var(--bord);
+	background-color: #bbb;
+}
+
+p {
+    counter-increment: paras;
+  }
+  
+  p::before {
+   content: '🔸' counter(paras) ':';
+  }
+
+
