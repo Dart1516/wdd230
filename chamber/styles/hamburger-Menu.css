@@ -37,7 +37,7 @@ nav ul  {
 
 
 /*pantalla de celular*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 
     #menu {
         font-size: 2.5rem;

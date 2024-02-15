@@ -1,0 +1,40 @@
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+
+    .additional-cards {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .additional-cards .card {
+        flex: 1;
+        padding: 20px;
+        margin: 0 10px;
+    }
+    
+    /* Estilos para la sección de spotlights */
+    .memberSpotlights {
+        text-align: center;
+    }
+    
+    .memberSpotlights h2 {
+        width: 100%;
+    }
+    
+    .memberSpotlights .cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .memberSpotlights .card1 {
+        flex: 0 1 calc(30% - 20px);
+        box-sizing: border-box;
+        border-width: 2px;
+        border-style: solid;
+        text-align: center;
+    }
+    
+    
+}

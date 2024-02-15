@@ -1,56 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My chamber page" >
-    <meta name="author" content="David Puche" >
-    <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon (1).ico" type="image/x-icon">
+    <meta name="description" content="My chamber page">
+    <meta name="author" content="David Puche">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="São Paulo and the chamber of Secrets">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dart1516.github.io/wdd230/">
-    <meta property="og:image" content="https://dart1516.github.io/wdd230/images/Chamber-Secrets-logo.png">
+    <meta
+      property="og:image"
+      content="https://dart1516.github.io/wdd230/images/Chamber-Secrets-logo.png">
     <meta property="fb:app_id" content="2593818390695362">
-    <meta property="og:description" content="this is for facebook data" >
+    <meta property="og:description" content="this is for facebook data">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/hamburger-Menu.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/harrypoterbutton.css">
+    <link rel="stylesheet" href="styles/gryffindor-mode.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>São Paulo and the Chamber of Commerce</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="img/Chamber-Secrets-logo.png" alt="logo">
-        <h1> São Paulo and the Chamber of Commerce</h1>
+      <img src="img/Chamber-Secrets-logo.png" alt="logo">
+      <h1>São Paulo and the Chamber of Commerce</h1>
+      <div id="characterButton" class="character1">
+        <div class="accessory-1"></div>
+        <div class="mouth"></div>
+        <div class="eyes"></div>
+        <div class="hair"></div>
+        <div class="accessory-2"></div>
+        <div class="accessory-3"></div>
+      </div>
     </header>
     <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-          <li><a class="color_link" href="#">Home</a></li>
-          <li><a class="color_link" href="lesson03/chamber-site-plan.html">Discover</a></li>
-          <li><a class="color_link" href="#"> Directory</a></li>
-          <li><a class="color_link" href="https://www.byui.edu/">Join</a></li>
-          
-        </ul>
-      </nav>
+      <button id="menu"></button>
+           <!-- boton gryffindor/slytherin-mode -->
+      <div  class="button-position gryffindor-mode" >
+        <img src="img/img1.png" alt="Botón" id="ButtonImage">
+      </div>
+      <ul class="navigation">
+        <li><a class="color_link" href="#">Home</a></li>
+        <li>
+          <a class="color_link" href="lesson03/chamber-site-plan.html"
+            >Discover</a
+          >
+        </li>
+        <li><a class="color_link" href="#"> Directory</a></li>
+        <li><a class="color_link" href="https://www.byui.edu/">Join</a></li>
+      </ul>
+    </nav>
     <main>
-          <img class="img-banner" src="img/baner1.webp" alt="baner1">
-          <button> Join the chamber</button>
-          <section class="card">
-            <h2> current event</h2>
-          </section>
-          <section class="card">
-            <h2>weather </h2>
-          </section>
-          <section class="card">
-            <h2>spotlights</h2>
-          </section>
+      <div class="banner">
+        <img class="img-banner" src="img/baner1.webp" alt="banner1">
+        <button>Join the chamber</button>
+    </div>
+    <section class="additional-cards">
+      <div class="card">
+        <h2>Events</h2>
+        <hr>
+        <h3>Harry Potter items auction</h3>
+        <p>
+          Great auction of the best Harry Potter items that can be found in
+          Brazilian territory. If you want to know more about the secrets and
+          have new adventures join us in this marvelous auction
+        </p>
+        <!-- The show more option -->
+        <span id="show-more" onclick="toggleMore()">Show more...</span>
+        <div id="more-content" style="display: none">
+          <p>The event will take place at:</p>
+          <p>Av. Paulista, 1234 - São Paulo, SP</p>
+          <p>The schedule is:</p>
+          <p>From 10:00 am to 6:00 pm</p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>weather</h2>
+        <hr> <br>
+        <!-- Api sacada de  https://hgbrasil.com/status/weather-->
+        <div class="hg-weather" data-key="4697890e " data-woeid="123">
+          <div>
+            <img src="http://assets.api.hgbrasil.com/weather/images/44.png" alt="Dynamic weather image" data-weather="image">
+          </div>
+          <div>
+            <span data-weather="message">Obtaining...<br></span>
+            <span data-weather="city">Obtaining city</span>
+            <span data-weather="temp">00</span>º C<br>
+            <span data-weather="description">Obtaining time...</span><br>
+            Humidity
+            <span data-weather="humidity">Obtaining humidity...</span> %<br>
+            Sunrise: <span data-weather="sunrise">00:00</span> <br>
+            Sunset: <span data-weather="sunset">00:00</span><br>
+            wind_speedy: <span data-weather="wind_speedy">-- km/h</span><br>
+          </div>
+        </div>
+      </div >
+
+    </section>
+      
+      <section class="memberSpotlights">
+        <h2>Member Spotlights</h2>
+        <div class="cards-container">
+            <div class="card1">
+                <h3>Thankful Transport</h3>
+                <p>"We get it there for you"</p>
+                <p>Hello@getmethere.com</p>
+                <p>+55 11 11111111</p>
+                <p>Website</p>
+            </div>
+            <div class="card1">
+                <h3>Code Primera</h3>
+                <p>After School coding</p>
+                <p>Hollo@codePrimera.com</p>
+                <p>+55 11 22222222</p>
+                <p>Website</p>
+            </div>
+            <div class="card1">
+                <h3>Build a Treefort</h3>
+                <p>Over 1000 Plans</p>
+                <p>Hello@buildfATreeFort</p>
+                <p>+55 11 33333333</p>
+                <p>Website</p>
+            </div>
+        </div>
+    </section>
     </main>
     <footer>
-        <hr >
-    <p>© <span id="year"> </span>  São Paulo and the chamber os secrets | David Puche | WDD 230 Project | Last Modification:  <span id="lastModified"></span></p>
+      <hr>
+      <p>
+        © <span id="year"> </span> São Paulo and the chamber os secrets | David
+        Puche | WDD 230 Project | Last Modification:
+        <span id="lastModified"></span>
+      </p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburger-Menu.js" ></script>
-</body>
+    <script src="scripts/hamburger-Menu.js"></script>
+    <script src="scripts/showmore.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="https://assets.hgbrasil.com/weather/js/hg-weather-1.0.js" ></script>
+    <script src="scripts/darkmode.js"></script>
+  </body>
 </html>
