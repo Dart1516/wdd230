@@ -64,7 +64,7 @@ var HGWeather = (function (e) {
       ],
       assetsEndpoint: "https://assets.hgbrasil.com/weather",
       defaultClass: "hg-weather",
-      developmentKey: "development",
+      developmentKey: "4697890e",
       developmentWoeid: "455827",
       endpoint: "https://api.hgbrasil.com/weather",
       locationButtonSelector: ".get-location",
