@@ -8,11 +8,13 @@ main {
 */
 
 .hero {
-	margin: 10px auto;
-	position: relative;
-	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
-}
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% del alto de la ventana */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    overflow: hidden; /* Para evitar que la imagen sobresalga del contenedor */
+
 
 .hero img {
 	width: auto;

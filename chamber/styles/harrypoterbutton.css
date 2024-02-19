@@ -24,12 +24,23 @@
   color: #c005;
 }
 
+
 /* Malfoy*/
 .slytherin-mode {
   color: #003407;
   background: linear-gradient(90deg, #787878 0%, #b5b5b5 25%, #e3e3e3 50%, #b5b5b5 75%, #787878 100%);
   font-size: x-large;
   font-weight: bolder;
-  
-
+}
+.slytherin-mode a{
+  color: #003407;
+}
+.slytherin-mode .card {
+  border-color: #003407; /* Cambiar el color del borde cuando se activa el modo "slytherin" */
+}
+.slytherin-mode  .memberSpotlights .card1 {
+  border-color: #003407; /* Cambiar el color del borde cuando se activa el modo "slytherin" */
+}
+.slytherin-mode  hr {
+  border-color: #003407; /* Cambiar el color del borde cuando se activa el modo "slytherin" */
 }

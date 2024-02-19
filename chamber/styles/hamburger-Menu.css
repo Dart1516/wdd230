@@ -1,74 +1,134 @@
-/*
-*{
+/** {
     border: green solid;
-}
-*/
+}*/
 
 
-nav{
-    display:grid ;
 
-    
+nav {
+    display: grid;
+
+
     font-size: 26px;
 }
 
-nav ul  {
+nav ul {
     display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     justify-content: space-around;
-    margin-bottom: 0px; /* Ajusta el valor según sea necesario para el espacio deseado */
+    margin-bottom: 0px;
+    /* Ajusta el valor según sea necesario para el espacio deseado */
     margin-top: 0px;
-    list-style: none;   
+    list-style: none;
 }
 
-.navigation  a {
-	padding: 1rem;
+.navigation a {
+    padding: 1rem;
 }
-.navigation  a:hover{
-	background-color: rgb(58, 63, 68);
+
+.navigation a:hover {
+    background-color: rgb(58, 63, 68);
 }
+
 /*para ocular la linea blanca que sale */
 #menu {
     border: none;
     padding: 0;
 }
 
+.image-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+
 
 /*pantalla de celular*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
     #menu {
         font-size: 2.5rem;
         padding: 3px 7px 6px;
         position: absolute;
-		background-color: transparent;
+        background-color: transparent;
         top: 1rem;
         right: 1rem;
     }
 
-    .navigation  {
-        display: none;  
+    .navigation {
+        display: none;
     }
+
     #menu::before {
         content: "☰";
         color: white;
 
     }
+
     #menu.open::before {
         content: "X";
         color: white;
 
     }
-    .open  {
+
+    .open {
         display: block;
     }
-    .open  a {
+
+    .open a {
         display: flex;
         justify-content: center;
         margin-left: -10%;
     }
 
+    /*Just for this week*/
+    .image-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+    }
 
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .image-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        display: inline-block;
+    }
 }
