@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	width: 530px;
+	background-color: #abe;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+picture:nth-child(2) img {
+	width: 300px;
+	height: 300px;
+}
+
+p {
+	grid-column: 1/3;
+	word-break: keep-all;
+}
+
+picture:nth-child(5) img {
+	width: auto;
+	height: 300px;
+	object-fit: cover;
+}

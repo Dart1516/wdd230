@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/image-Aspect-Ratio.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <picture>
+            <img src="https://placekitten.com/200/300" alt="Placeholder" loading="lazy" width="200" height="300">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/300/200" alt="Placeholder" loading="lazy" width="300" height="200">
+        </picture>
+        <p>The image on the right violates its aspect ratio (300x200 or 3:2) trying to fit the box using CSS for both the width and the height (1:1) and the image becomes pixelated.<br><br>Solution: Use a different image that fits the design area, alter the layout, or use object-fit. Consider setting the height or the width to auto in CSS to provide responsive behavior. Often a height or width set to auto will work depending on the layout.</p>
+        <picture>
+            <img src="https://placekitten.com/200/300" alt="Placeholder" loading="lazy" width="200" height="300">
+        </picture>
+        <picture>
+            <img src="https://placekitten.com/700/1000" alt="Placeholder" loading="lazy" width="300" height="200">
+        </picture>
+    </main>
+</body>
+</html>

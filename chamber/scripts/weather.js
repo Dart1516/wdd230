@@ -8,10 +8,10 @@ var HGWeather = (function (e) {
     var s = new XMLHttpRequest(),
       r =
         t.options.endpoint +
-        "/?format=json-cors&key=4697890e" +
+        "/?format=json-cors&key=" +
         o +
         (globals.byLocation ? "&user_ip=remote" : "") +
-        "&woeid=455827" +
+        "&woeid=" +
         a +
         "&sdk_version=js" +
         t.VERSION +
