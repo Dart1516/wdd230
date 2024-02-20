@@ -17,7 +17,7 @@ var HGWeather = (function (e) {
         t.VERSION +
         (n ? "&lat=" + n.coords.latitude + "&lon=" + n.coords.longitude : "");
     function i() {
-      var o = e.querySelector('[data-weather="message"]');
+      var o = "4697890e";
       (o.style.display = "block"), (o.innerText = t.messages.getDataError);
     }
     (s.onload = function () {
