@@ -14,7 +14,7 @@ main {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     overflow: hidden; /* Para evitar que la imagen sobresalga del contenedor */
-
+}
 
 .hero img {
 	width: auto;
