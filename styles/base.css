@@ -33,7 +33,7 @@ h2, hr {
     text-align: center;
 }
 
-h3{
+h3, h4{
     background-color: #5e3d37;
     color: white;
     grid-row: 2/3;
