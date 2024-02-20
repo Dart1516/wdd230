@@ -70,13 +70,12 @@ var HGWeather = (function (e) {
       locationButtonSelector: ".get-location",
       selector: ".hg-weather",
     }),
-    (t.messages = {
+    (t.messages = { /*
       developmentKeyWarning:
         '<div><strong>AtenÃ§Ã£o!</strong> VocÃª estÃ¡ usando a chave de API de testes, a mesma sÃ³ funciona no domÃ­nio localhost ou diretamente pelo arquivo.<br><a href="https://console.hgbrasil.com/keys" target="_blank">Clique aqui</a> e solicite uma chave para seu site gratuitamente. Altere a chave na <code>data-key</code> da div com a classe <code>hg-weather</code>.</div>',
       getDataError: "Erro ao tentar obter dados da HG Weather.",
       getLocationError:
-        "Erro ao tentar obter a localizaÃ§Ã£o atravÃ©s do seu navegador.",
-    }),
+        "Erro ao tentar obter a localizaÃ§Ã£o atravÃ©s do seu navegador.",*/    }),
     (t.initialize = function (a, n) {
       for (
         var s = e.querySelectorAll(t.options.selector), r = 0;
