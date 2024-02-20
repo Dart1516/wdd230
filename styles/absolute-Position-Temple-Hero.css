@@ -1,25 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-/*
-main {
-	max-width: 670px;
-	margin: 0 auto;
-}
-*/
-
 .hero {
-    width: 100vw; /* 100% del ancho de la ventana */
-    height: 100vh; /* 100% del alto de la ventana */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
     overflow: hidden; /* Para evitar que la imagen sobresalga del contenedor */
+	position: relative; 
 }
 
 .hero img {
-	width: auto;
+	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	margin-left: -10px;
 }
 
 .herolabel {
@@ -39,12 +26,14 @@ main {
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 1.5rem;
-	font-family:"Great Vibes", serif;
 }
 
 
-
 @media screen and (min-width: 641px){
+	.hero {
+
+    }
+
 	.herolabel {
 		position: absolute;
 		top: 30px;
