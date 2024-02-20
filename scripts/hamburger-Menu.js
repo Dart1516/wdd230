@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*
-el codigo de la clase era así 
+el código anterior de la clase era así:
 
 	hamButton.addEventListener('click', () => {
 		navigation.classList.toggle('open');
