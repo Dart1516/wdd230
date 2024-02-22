@@ -44,3 +44,6 @@
 .slytherin-mode  hr {
   border-color: #003407; /* Cambiar el color del borde cuando se activa el modo "slytherin" */
 }
+.slytherin-mode a:hover {
+  background-color: rgb(192, 187, 187);
+}
