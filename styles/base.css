@@ -1,10 +1,10 @@
-body{
+body {
     font-size: 18px;
     margin: 0;
 }
 
 
-header{
+header {
     background-color: #5e3d37;
     display: grid;
     place-items: center;
@@ -14,26 +14,31 @@ header{
     grid-template-areas: "image title";
 }
 
-header h1{
+header h1 {
     font-family: 'Merriweather', serif;
     margin-left: 15%;
     margin-right: 45%;
 }
-h2{
+
+h2 {
     margin-bottom: 0;
 }
+
 /*this is or the line*/
-hr{
+hr {
     height: 1px;
     background-color: #5e3d37;
-    margin-top: 0; 
+    margin-top: 0;
 }
-h2, hr {
+
+h2,
+hr {
     width: 90%;
     text-align: center;
 }
 
-h3, h4{
+h3,
+h4 {
     background-color: #5e3d37;
     color: white;
     grid-row: 2/3;
@@ -46,47 +51,63 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    
+
 }
 
-main section ul{
+main section ul {
     text-align: left;
     list-style: none;
-    padding-left: 1%; /* Elimina el padding predeterminado de la lista */
+    padding-left: 1%;
+    /* Elimina el padding predeterminado de la lista */
 }
 
-.card{
+.card {
     border-width: 2px;
     border-style: solid;
     border-color: #29252d;
     text-align: center;
-    margin-left:  2%;
+    margin-left: 2%;
     margin-right: 2%;
+
+}
+
+.card2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .card iframe {
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    height: 100%; /* Ocupa el 100% de la altura del contenedor */
-    position: relative; /* Posiciona de forma absoluta dentro del contenedor */
-    top: 0; /* Coloca el iframe en la parte superior del contenedor */
-    left: 0; /* Coloca el iframe en el borde izquierdo del contenedor */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
-footer{
+
+footer {
     text-align: center;
-    background-color:#5e3d37;
+    background-color: #5e3d37;
     padding: 10px;
     color: white;
     margin-top: 2%;
 }
-.brazilFlag{
+
+.brazilFlag {
     width: 50px;
     vertical-align: middle;
 }
 
-.color_link{
+.color_link {
     color: aliceblue;
-    text-decoration:none; /*Remove the decoration*/
+    text-decoration: none;
+    /*Remove the decoration*/
 }
+
 .image_small {
     width: 150px;
     height: 150px;
@@ -95,39 +116,70 @@ footer{
     margin-left: 75%;
 }
 
-@media screen and (min-width: 641px){
-
-    header h1{
-        font-family: 'Merriweather', serif;
-        
-    }
+/*For the weather*/
+.weatherContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
-    main{
+}
+
+.weather-info img {
+    margin-right: 10px;
+    max-height: 100px;
+    vertical-align: middle;
+    
+}
+
+.weather-info span {
+    
+    vertical-align: middle;
+
+}
+
+
+ul li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 641px) {
+
+    header h1 {
+        font-family: 'Merriweather', serif;
+
+    }
+
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 8px;
     }
-    main section{
+
+    main section {
         margin-bottom: 20px;
     }
-    main section ul{
-        
-        list-style: none;    
+
+    main section ul {
+
+        list-style: none;
     }
 
-    main h2, main hr{
+    main h2,
+    main hr {
         grid-column: 1 / 3;
         margin-bottom: 0;
-        
+
     }
+
     /*this is to use the mal in all the screen*/
     main section:nth-child(5) {
         grid-column: span 2;
         margin-bottom: 5%;
     }
-} 
+}
+
 
 *{
     border: green solid;
 }
-

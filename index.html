@@ -54,7 +54,7 @@
           <li>04:<a href="lesson04/css-Pseudo-Classes/activity.html"> Activity Pseudo-Classes</a > </li>
           <li>05:<a href="lesson05/bom.html"> Book of Mormon Favorite Chapters Application</a></li>
           <li>06:<a href="images/landscape.webp">Webp</a> | <a href="lesson06/responsive-images.html"> responsive images</a> </li>
-          <li>07:<a href="lesson07/lazy-Loading/lazyload.html"> Lazy Load</a> | <a href="/lesson07/web-Storage-API- localStorage/book-of-Mormon-Favorite-Chapters-Application/bom.html"></a></li>
+          <li>07:<a href="lesson07/lazy-Loading/lazyload.html"> Lazy Load</a> | <a href="/lesson07/web-Storage-API- localStorage/book-of-Mormon-Favorite-Chapters-Application/bom.html"> Book Of Mormon Application updated</a></li>
           <li>08:<a href=""></a></li>
           <li>09:<a href=""></a></li>
           <li>10:<a href=""></a></li>
@@ -62,9 +62,24 @@
       </section>
       <section class="card">
         <h3>Information</h3>
-        <p>São, Paulo Brazil</p>
-        <p>Weather:</p>
-        <p>Page Visits:</p>
+        <div class="card2">
+          <div class="hg-weather" data-key="570d7d81" data-woeid="455827">
+            <span data-weather="message">Obtaining...<br /></span>
+            <p><span data-weather="city_name">Obtaining city</span>, Brazil</p>
+            <div class="container">
+              <div class="weather-info">
+                  <img
+                      src="img/default-weather-image-44.webp"
+                      alt="Dynamic weather image"
+                      data-weather="image"
+                  />
+                  <span data-weather="temp">00</span>º C - <span data-weather="condition_slug"></span>
+              </div>
+            <div>
+              <span class="label">Page Visits: </span><span class="visits"></span>
+
+        </div>
+        
       </section>
       <section class="card">
         <h4>Map</h4>
@@ -89,7 +104,9 @@
       </p>
       <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger-Menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/pageVisits.js"></script>
   </body>
 </html>
