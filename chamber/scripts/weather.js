@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var HGWeather = (function (e) {
   var t = {};
+  // Declaramos variables para almacenar los datos de temperatura y velocidad del viento
+  var temperatureData, windSpeedData;
+
   function o(e, o, a, n) {
     var s = new XMLHttpRequest(),
       r =
@@ -39,7 +42,46 @@ var HGWeather = (function (e) {
               var r = a[s];
               -1 !== t.options.accessibleData.indexOf(r.dataset.weather) &&
                 (r.innerText = o[r.dataset.weather]);
+
+              // This is my code for Windchill
+              if (r.dataset.weather === "temp") {
+                temperatureData = o[r.dataset.weather];
+              }
+              if (r.dataset.weather === "wind_speedy") {
+                windSpeedData = o[r.dataset.weather];
+              }
             }
+// fot the formula in celcius was took here https://www.wikihow.life/Calculate-Wind-Chill
+            function calculateWindChill(temperatureData, windSpeedData) {
+              if (temperatureData <= 50 && windSpeedData > 1) {
+                const windChill = 13.12 + 0.6215 * temperatureData - 11.37 * Math.pow(windSpeedData, 0.16) + 0.3965 * temperatureData * Math.pow(windSpeedData, 0.16);
+                return windChill.toFixed(2);
+              } else {
+                return "N/A";
+              }
+            }
+            // This is to see if is loading the data
+            console.log("temperature:", temperatureData);
+            console.log("windSpeed:", windSpeedData);
+
+            console.log("Wind Chill:",calculateWindChill(temperatureData,
+                            windSpeedData
+              )
+            );
+
+            const windChillElement = e.querySelector(
+              '[data-weather="wind_chill"]'
+            );
+
+            // This is the code to calculate
+            const windChillValue = calculateWindChill(
+              parseFloat(temperatureData),
+              parseFloat(windSpeedData)
+            );
+            
+            // and this is the code to appear
+            windChillElement.innerText = windChillValue + " º C";
+            
           })(JSON.parse(s.responseText).results)
         : i(s.responseText);
     }),
@@ -70,12 +112,7 @@ var HGWeather = (function (e) {
       locationButtonSelector: ".get-location",
       selector: ".hg-weather",
     }),
-    (t.messages = { /*
-      developmentKeyWarning:
-        '<div><strong>AtenÃ§Ã£o!</strong> VocÃª estÃ¡ usando a chave de API de testes, a mesma sÃ³ funciona no domÃ­nio localhost ou diretamente pelo arquivo.<br><a href="https://console.hgbrasil.com/keys" target="_blank">Clique aqui</a> e solicite uma chave para seu site gratuitamente. Altere a chave na <code>data-key</code> da div com a classe <code>hg-weather</code>.</div>',
-      getDataError: "Erro ao tentar obter dados da HG Weather.",
-      getLocationError:
-        "Erro ao tentar obter a localizaÃ§Ã£o atravÃ©s do seu navegador.",*/    }),
+    (t.messages = {}),
     (t.initialize = function (a, n) {
       for (
         var s = e.querySelectorAll(t.options.selector), r = 0;
