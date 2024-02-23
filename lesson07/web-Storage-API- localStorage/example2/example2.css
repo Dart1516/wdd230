@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+body {
+	height: 100vh;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	
+}
+
+main {
+	margin: 0;
+	padding: 1rem;
+	width: 860px;
+	background-color: rgba(225, 225, 255, 0.2);
+}
+
+
+.label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.today {
+	color: tomato;
+}
+
+.smaller {
+	font-size: smaller;
+}
