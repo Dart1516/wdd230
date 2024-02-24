@@ -37,8 +37,7 @@ hr {
     text-align: center;
 }
 
-h3,
-h4 {
+h3 {
     background-color: #5e3d37;
     color: white;
     grid-row: 2/3;
@@ -48,6 +47,13 @@ h4 {
 .cityName{
     font-weight:bolder ;
     font-size: x-large;
+}
+.mapTitle{
+    background-color: #5e3d37;
+    color: white;
+    grid-row: 2/3;
+    margin-top: 0;
+    padding: 10px;
 }
 
 
