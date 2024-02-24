@@ -10,6 +10,7 @@
 
  html {
     line-height: 1.15; /* 1 */
+
   }
   
   /* Sections
@@ -194,12 +195,18 @@
   button,
   [type="button"],
   [type="reset"],
-  [type="submit"] 
+  [type="submit"],
+
+
   
   /**
    * Remove the inner border and padding in Firefox.
    */
   
+ 
+   
+
+
 
 
 
@@ -208,7 +215,12 @@
    * Restore the focus styles unset by the previous rule.
    */
   
-  
+   
+
+
+
+
+
   
   /**
    * Correct the padding in Firefox.
@@ -265,6 +277,9 @@
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
   
+   
+
+
 
   
   /**
@@ -273,22 +288,28 @@
    */
   
   [type="search"] {
+
     outline-offset: -2px; /* 2 */
   }
   
   /**
    * Remove the inner padding in Chrome and Safari on macOS.
-   */
+   
   
 
+   
+
   
-  /**
+  *
    * 1. Correct the inability to style clickable types in iOS and Safari.
    * 2. Change font properties to `inherit` in Safari.
    */
   
 
-  
+   
+
+
+   
   /* Interactive
      ========================================================================== */
   

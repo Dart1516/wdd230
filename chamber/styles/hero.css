@@ -1,0 +1,67 @@
+.banner {
+  display: flex;
+}
+
+.content {
+  flex: 3; /* El texto ocupa el 30% del ancho */
+  padding: 20px; /* Añade un padding para separar el texto del borde */
+}
+
+.image-container {
+  flex: 7; /* La imagen ocupa el 70% del ancho */
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle; /* Alinea verticalmente la imagen */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+  }
+
+  .image-container,
+  .content {
+    flex: 1; /* En pantallas pequeñas, ambos elementos ocupan el 100% del ancho */
+  }
+
+  .content {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+}
+button {
+  padding: 10px 20px;
+  background-color: rgb(189, 85, 85);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 680px) {
+    .image-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+    }
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        display: inline-block;
+    }
+}
+/**{
+    border: green solid;
+}*/

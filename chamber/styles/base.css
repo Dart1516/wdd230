@@ -20,10 +20,7 @@ header img {
     /*Remove the decoration*/
 }
 
-.img-banner {
-    width: 100%;
 
-}
 
 body {
     background: radial-gradient(ellipse at center, #866a04 0%, #000 100%);
@@ -64,3 +61,120 @@ hr {
     text-align: center;
     color: #eeba30;
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 10px;
+    text-align: center;
+    /* Espacio entre las columnas */
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas con la misma anchura */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+}
+
+
+/* Estilos para las imágenes */
+.main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenido de texto */
+.content {
+    background: linear-gradient(
+        to bottom, 
+        #cfc09f 22%, 
+        #634f2c 24%, 
+        #cfc09f 26%, 
+        #cfc09f 27%, 
+        #ffecb3 40%, 
+        #3a2c0f 78%);
+    grid-column-start: 2;
+    border-radius: 25px;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline-block;
+    position: relative;
+}
+
+.title::after,
+.title::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.title::before {
+    right: 40px;
+}
+
+.title::before {
+    left: 550px;
+}
+
+/* Estilos adicionales para hacer responsive el diseño */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        /* Una sola columna en dispositivos móviles */
+    }
+
+    .content {
+        grid-column: span 1;
+        /* El texto ocupa toda la anchura en dispositivos móviles */
+    }
+}
+
+button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #69727d;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    transition: all .3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #FFFFFF;
+    background-color: #BF6100;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background-color: #3D93AA;
+
+}
+
+.image-container picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 35px;
+    border: 1px solid goldenrod;
+}
+
+.image-container picture {
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
