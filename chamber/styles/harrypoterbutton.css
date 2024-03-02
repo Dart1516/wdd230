@@ -36,6 +36,11 @@
 .slytherin-mode a {
   color: #003407;
 }
+.slytherin-mode button a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
 
 .slytherin-mode .card {
   border-color: #003407;
@@ -54,4 +59,13 @@
 
 .slytherin-mode a:hover {
   background-color: rgb(192, 187, 187);
+}
+.slytherin-mode #menu::before {
+  color: black;
+
+}
+
+.slytherin-mode #menu.open::before {
+  color: black;
+
 }

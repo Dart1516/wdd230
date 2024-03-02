@@ -2,59 +2,73 @@
   display: flex;
 }
 
-.content {
-  flex: 3; /* El texto ocupa el 30% del ancho */
-  padding: 20px; /* Añade un padding para separar el texto del borde */
+.heroContent {
+  grid-column-start: 2;
+  border-radius: 25px;
+  padding: 20px; 
+  margin: 20px; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  flex: 2; /* content will width the 25% of the screen */
 }
 
-.image-container {
-  flex: 7; /* La imagen ocupa el 70% del ancho */
+.heroContent h2,
+.heroContent p {
+  margin: 10px 0; 
+}
+
+.hero-container {
+  flex: 7; 
   overflow: hidden;
   text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 10px;
+  
 }
 
-.image-container img {
+.hero-container img {
   max-width: 100%;
   height: auto;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle; /* Alinea verticalmente la imagen */
+  width: auto; 
+  border-radius: 25px;
 }
 
+.hero-container,
+.heroContent {
+
+}
 @media (max-width: 768px) {
   .banner {
-    flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+    flex-direction: column;
   }
 
-  .image-container,
-  .content {
-    flex: 1; /* En pantallas pequeñas, ambos elementos ocupan el 100% del ancho */
+  .hero-container,
+  .heroContent {
+    flex: 1; 
+    
   }
 
-  .content {
-    text-align: center; /* Centra el texto en pantallas pequeñas */
+  .heroContent {
+    text-align: center; 
+    margin-bottom: 20px;
   }
 }
-button {
-  padding: 10px 20px;
-  background-color: rgb(189, 85, 85);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-}
+
 @media screen and (max-width: 680px) {
-    .image-container {
+    .hero-container {
 
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         text-align: center;
+        margin: 10px;
     }
-    .image-container img {
+    .hero-container img {
         max-width: 100%;
         max-height: 100%;
         height: auto;
@@ -62,6 +76,6 @@ button {
         display: inline-block;
     }
 }
-/**{
+*{
     border: green solid;
-}*/
+}

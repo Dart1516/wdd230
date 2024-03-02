@@ -140,18 +140,23 @@ hr {
 button {
     display: inline-block;
     line-height: 1;
-    background-color: #69727d;
-    font-size: 15px;
-    padding: 12px 24px;
-    border-radius: 3px;
-    color: #fff;
+    font-size: 1rem;
     text-align: center;
     transition: all .3s;
-    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1.4px;
     color: #FFFFFF;
-    background-color: #BF6100;
+    background-color: rgb(189, 85, 85);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+button a{
+    color: aliceblue;
+    text-decoration: none;
 }
 
 button:hover {
