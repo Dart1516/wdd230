@@ -51,7 +51,9 @@ input[type="range"] {
 /*now to specific*/
 .wf1 input[type="text"],
 .wf1 input[type="password"],
-.wf1 input[type="email"]
+.wf1 input[type="email"],
+.wf1 input[type="phone"],
+.wf1 textarea
  {
    background-color: wheat;
    display: block;
@@ -90,33 +92,3 @@ input[type="range"] {
     border: solid 2.5px green;
  }
 
- 
-
-/* SCORE BAR */
-#r {
-   width: 80%;
-   margin-bottom: 10px;
-}
-
-#r::-webkit-slider-runnable-track {
-   background: linear-gradient(90deg, var(--Hufflepuff) 0%, var(--Ravenclaw) 100%);; /* change the bar color */
-   border-radius: 5px;
-
-}
-#rangevalues {
-   display: flex;
-   justify-content: space-between; 
-   width: 80%; 
-   margin: 0 auto; 
-}
-
-#rangevalues option {
-   flex: 0 1 auto; 
-   text-align: center; 
-   width: calc(100% / 11); 
-}
-
-#rangevalue {
-   font-size: 2rem; 
-   margin-bottom: 10px; 
-}
