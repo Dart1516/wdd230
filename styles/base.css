@@ -1,3 +1,8 @@
+/*
+*{
+    border: green solid;
+}*/
+
 body {
     font-size: 18px;
     margin: 0;
@@ -191,7 +196,3 @@ ul li {
     }
 }
 
-/*
-*{
-    border: green solid;
-}*/
