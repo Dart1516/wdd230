@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/hamburger-Menu.css">
     <link rel="stylesheet" href="styles/harrypoterbutton.css">
-    <link rel="stylesheet" href="styles/gryffindor-mode.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
     <title>São Paulo and the Chamber of Commerce  - Join us</title>
@@ -96,16 +95,15 @@
         <span id="lastModified"></span>
       </p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <!-- This is here because I didn't want to create a new js file for this-->
+    <script > 
+      const dateTimeHidden = document.getElementById('date-time');
+      const currentDateTime = Date.now();
+      dateTimeHidden.value = currentDateTime;
+      console.log(dateTimeHidden.value)
+  </script>
     <script src="scripts/hamburger-Menu.js"></script>
-    
     <script src="scripts/form.js"></script>
     <script src="scripts/darkmode.js"></script>
-    
-    
-
   </body>
-
-
-
 </html>
