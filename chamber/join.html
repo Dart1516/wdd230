@@ -36,7 +36,7 @@
       </div>
     </header>
     <nav>
-      <button id="menu"> <!--Mobile Menu--></button>
+      <button id="menu" aria-label="Menu Button to open the Nav Menu"></button>
       <div  class="button-position gryffindor-mode" >
         <img src="img/img1.webp" alt="Botón" id="ButtonImage"></div>
         <ul class="navigation">
@@ -54,9 +54,9 @@
         <legend>Applicant Information</legend>
         <label> First name* <input type="text" id="fname" name="fname" autocomplete="given-name" required> </label>
         <label> Last name* <input type="text" id="lname" name="lname" autocomplete="family-name" required> </label>
-        <label> Title or position* <input type="text" id="position" name="position" autocomplete="position" pattern="[a-zA-Z\- ]{7,}" title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" required> </label>
-        <label >Email* <input type="email" id="email" name="email" placeholder="something@example.com" title="A valid email address." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email"> </label>
-        <label> Phone <input type="phone" name="phone" placeholder="+55 11 123456789" required autocomplete="tel-country-code"> </label>
+        <label> Title or position* <input type="text" id="position" name="position" autocomplete="work" pattern="[a-zA-Z\- ]{7,}" title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" required> </label>
+        <label >Email* <input type="email" id="email" name="email" placeholder="something@example.com" title="A valid email address." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email" required> </label>
+        <label> Phone <input type="tel" name="phone" placeholder="+55 11 123456789" autocomplete="tel" required > </label>
         <label> Business/Organization's name <input type="text" id="oname" name="oname" autocomplete="organization-title" required> </label>
       </fieldset>
       <section class="additional-cards">
@@ -75,11 +75,11 @@
         </div>
     </section>
       
-      <fieldset>
-        <legend> Business/Organization's description</legend>
-        <textarea type="text area" id="businessDescription" name="businessDescription"></textarea>
-        
-      </fieldset>
+    <fieldset>
+      <legend>Business/Organization's description</legend>
+      <label for="businessDescription">Describe your business or organization:</label>
+      <textarea id="businessDescription" name="businessDescription"></textarea>
+  </fieldset>
      
      
     

@@ -52,7 +52,7 @@ input[type="range"] {
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"],
-.wf1 input[type="phone"],
+.wf1 input[type="tel"],
 .wf1 textarea
  {
    background-color: wheat;
