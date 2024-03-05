@@ -1,0 +1,100 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy_Layout"
+                }
+            ],
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ],
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/w3schools-exercise.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "lesson03/CSS-Pseudo-elements/CSS-Pseudo-elements.html",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "lesson03/hamburger-Menu-Exercise/hamburger-Menu.html",
+                    "title": "Responsive Menu"
+                }
+            ],
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "lesson04/css-Pseudo-Classes/activity.html",
+                    "title": "Activity Pseudo-Classes<"
+                }
+            ],
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon Favorite Chapters Application"
+                }
+            ],
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "responsive images"
+                }
+            ],
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazy-Loading/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "lesson07/web-Storage-API-localStorage/book-of-Mormon-Favorite-Chapters-Application/bom.html",
+                    "title": "Book Of Mormon Application updated"
+                }
+            ],
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "form.html",
+                    "title": "Form build"
+                }
+            ],
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Latter-day Prophets"
+                }
+            ],
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ],
+        }
+    ]
+}

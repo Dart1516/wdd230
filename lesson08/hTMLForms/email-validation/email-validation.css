@@ -1,0 +1,25 @@
+form {
+	margin: 1rem;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1rem;
+	background-color: #eee;
+	width: 400px;
+}
+
+input {
+	padding: .5rem;
+}
+
+input::placeholder {
+	font-size: .6rem;
+	font-style: italic;
+	font-weight: 700;
+}
+
+input[name="email"]:required:valid {
+	background-color: #bed;
+}
+
+input[name="email"]:invalid {
+	background-color: #ffeeee;
+}

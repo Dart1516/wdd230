@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Acme, Arial, sans-serif;
+    line-height: 1.4;
+  }
+  h1 {
+    margin: 1rem;
+  }
+  
+  main {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background: #eee;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  input {
+    padding: 0.65rem;
+    text-size: 1.1rem;
+    font-weight: 700;
+    border: 1px solid rgba(0,0,0,.2);
+  }
+  
+  input:valid {
+    background-color: lightgreen;
+    color: green;
+  }
+  
+  input:invalid {
+    background-color: pink;
+    color: red;
+  }
+  
+  label {
+    margin-right: 1rem;
+  }
+  
+  p {
+    margin-left: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  

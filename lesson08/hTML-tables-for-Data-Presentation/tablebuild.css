@@ -1,0 +1,46 @@
+:root {
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    border: black border;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+
+tr:first-child th,
+.highlight {
+    background-color: black;
+    color: white;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid black
+}
+
+th {
+    color: white;
+    background-color: grey;
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+.empyCell {
+    background-color: black;
+}

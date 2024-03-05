@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /*toda la información esta aca 
+        https://css-tricks.com/form-validation-ux-html-css/*/
+      form {
+        max-width: 750px;
+        > div {
+          > input[type="text"],
+          > input[type="email"],
+          > input[type="password"] {
+            /* esto es para que aparezca el ratito de check show success!*/
+            &:valid {
+              background: url(images/check.svg);
+              background-size: 20px;
+              background-repeat: no-repeat;
+              background-position: 20px 20px;
+            }
+            /* este codigo es para desaparecer texto*/
+            &:focus {
+              & + label {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    </style>
+    <form action="#0" method="post">
+      <div>
+        <!-- El required es para que sea obligatorio llenarlo-->
+        <input required type="text" id="first_name" name="first_name" />
+        <label for="first_name">First Name</label>
+        <input required type="email" id="email" name="email" />
+        <label for="email">best email</label>
+        <input required="password" id="password" name="password" />
+        <label for="password">password</label>
+        
+      </div>
+      <div>
+        <li> 
+            <label for="password">I would like my password to be:</label> 
+            <p>(at least 6 characters, no spaces)</p>
+            <input type="password" id="password" name="password" 
+            required title="(at least 6 characters, no spaces)" pattern="\S{6,}"> 
+      </div>
+
+      <!-- ... --->
+    </form>
+  </body>
+</html>
