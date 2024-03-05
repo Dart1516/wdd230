@@ -1,0 +1,229 @@
+{
+    "Companies": [
+        {
+            "names": "PixelPals",
+            "category": "videoGames",
+            "addresses": "Rua Diagon 9 3/4, Jardim Paulista, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 123456789",
+                    "phone2": "+55 11 987654321"
+                }
+            ],
+            "websiteURL": "https://www.pixel-pals.com",
+            "image": "https://loremflickr.com/600/400/videoGames",
+            "membershipLevel": "Nonprofits",
+            "legalRepresentative": "Fizzy McSparkles"
+        },
+        {
+            "names": "TechTurtles",
+            "category": "software",
+            "addresses": "Rua Hogwarts, Vila Madalena, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 234567890",
+                    "phone2": "+55 11 876543210"
+                }
+            ],
+            "websiteURL": "https://www.tech-turtles.com",
+            "image": "https://loremflickr.com/600/400/software",
+            "membershipLevel": "Bronze",
+            "legalRepresentative": "Bobby Bananas"
+        },
+        {
+            "names": "ElectroSpark",
+            "category": "electronics",
+            "addresses": "Rua Godric Gryffindor 777, Itaim Bibi, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 345678901",
+                    "phone2": "+55 11 765432109"
+                }
+            ],
+            "websiteURL": "https://www.electro-spark.com",
+            "image": "https://loremflickr.com/600/400/electronics",
+            "membershipLevel": "Gold",
+            "legalRepresentative": "Sally Sparklebottom"
+        },
+        {
+            "names": "FashionFusion",
+            "category": "clothing",
+            "addresses": "Rua Hogsmeade, Moema, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 456789012",
+                    "phone2": "+55 11 654321098"
+                }
+            ],
+            "websiteURL": "https://www.fashion-fusion.com",
+            "image": "https://loremflickr.com/600/400/clothing",
+            "membershipLevel": "Silver",
+            "legalRepresentative": "Fred Fluffypants"
+        },
+        {
+            "names": "TastyTreats",
+            "category": "food",
+            "addresses": "Rua Borgin & Burkes, Pinheiros, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 567890123",
+                    "phone2": "+55 11 543210987"
+                }
+            ],
+            "websiteURL": "https://www.tasty-treats.com",
+            "image": "https://loremflickr.com/600/400/food",
+            "membershipLevel": "Nonprofits",
+            "legalRepresentative": "Lenny Lemonade"
+        },
+        {
+            "names": "HappyHearts",
+            "category": "health",
+            "addresses": "Rua Slytherin Rivitti 14, Parque Bristol, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 678901234",
+                    "phone2": "+55 11 432109876"
+                }
+            ],
+            "websiteURL": "https://www.happy-hearts.com",
+            "image": "https://loremflickr.com/600/400/health",
+            "membershipLevel": "Gold",
+            "legalRepresentative": "Polly Pillowfeathers"
+        },
+        {
+            "names": "CoinCapers",
+            "category": "finance",
+            "addresses": "Rua Ollivander 7, Vila Olímpia, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 789012345",
+                    "phone2": "+55 11 321098765"
+                }
+            ],
+            "websiteURL": "https://www.coin-capers.com",
+            "image": "https://loremflickr.com/600/400/finance",
+            "membershipLevel": "Bronze",
+            "legalRepresentative": "Eddie Evergreen"
+        },
+        {
+            "names": "WheelsAndDeals",
+            "category": "transportation",
+            "addresses": "Rua Knockturn Alley, Perdizes, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 890123456",
+                    "phone2": "+55 11 210987654"
+                }
+            ],
+            "websiteURL": "https://www.wheels-and-deals.com",
+            "image": "https://loremflickr.com/600/400/transportation",
+            "membershipLevel": "Silver",
+            "legalRepresentative": "Gus Gadget"
+        },
+        {
+            "names": "GameGurus",
+            "category": "videoGames",
+            "addresses": "Rua Nimbus 2000, Liberdade, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 901234567",
+                    "phone2": "+55 11 109876543"
+                }
+            ],
+            "websiteURL": "https://www.game-gurus.com",
+            "image": "https://loremflickr.com/600/400/videoGames",
+            "membershipLevel": "Nonprofits",
+            "legalRepresentative": "Luna Lovegood"
+        },
+        {
+            "names": "WizardWonders",
+            "category": "electronics",
+            "addresses": "Rua Platform 9 3/4, Moema, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 222333444",
+                    "phone2": "+55 11 555666777"
+                }
+            ],
+            "websiteURL": "https://www.wizard-wonders.com",
+            "image": "https://loremflickr.com/600/400/electronics",
+            "membershipLevel": "Gold",
+            "legalRepresentative": "Ron Weasley"
+        },
+        {
+            "names": "WitchyWares",
+            "category": "clothing",
+            "addresses": "Rua Diagon Alley, Vila Madalena, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 777888999",
+                    "phone2": "+55 11 000111222"
+                }
+            ],
+            "websiteURL": "https://www.witchy-wares.com",
+            "image": "https://loremflickr.com/600/400/clothing",
+            "membershipLevel": "Silver",
+            "legalRepresentative": "Hermione Granger"
+        },
+        {
+            "names": "MagicalMeals",
+            "category": "food",
+            "addresses": "Rua Leaky Cauldron, Pinheiros, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 333444555",
+                    "phone2": "+55 11 666777888"
+                }
+            ],
+            "websiteURL": "https://www.magical-meals.com",
+            "image": "https://loremflickr.com/600/400/food",
+            "membershipLevel": "Nonprofits",
+            "legalRepresentative": "Severus Snape"
+        },
+        {
+            "names": "SpellboundSolutions",
+            "category": "software",
+            "addresses": "Rua Azkaban, Itaim Bibi, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 444555666",
+                    "phone2": "+55 11 777888999"
+                }
+            ],
+            "websiteURL": "https://www.spellbound-solutions.com",
+            "image": "https://loremflickr.com/600/400/software",
+            "membershipLevel": "Bronze",
+            "legalRepresentative": "Albus Dumbledore"
+        },
+        {
+            "names": "QuidditchSupply",
+            "category": "sports",
+            "addresses": "Rua Quidditch Pitch, Liberdade, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 888999000",
+                    "phone2": "+55 11 222333444"
+                }
+            ],
+            "websiteURL": "https://www.quidditch-supply.com",
+            "image": "https://loremflickr.com/600/400/sports",
+            "membershipLevel": "Silver",
+            "legalRepresentative": "Sirius Black"
+        },
+        {
+            "names": "EnchantedElixirs",
+            "category": "beverages",
+            "addresses": "Rua Three Broomsticks, Moema, São Paulo",
+            "phone": [
+                {
+                    "phone1": "+55 11 999000111",
+                    "phone2": "+55 11 444555666"
+                }
+            ],
+            "websiteURL": "https://www.enchanted-elixirs.com",
+            "image": "https://loremflickr.com/600/400/beverages",
+            "membershipLevel": "Gold",
+            "legalRepresentative": "Bellatrix Lestrange"
+        }
+    ]
+}
