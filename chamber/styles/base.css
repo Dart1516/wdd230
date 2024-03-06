@@ -1,7 +1,7 @@
 /**{
     border: green solid;
-}
-*/
+}*/
+
 
 header {
     place-items: center;
@@ -183,3 +183,64 @@ button:hover {
 
 }
 
+/*For the directory*/
+.grid {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.grid section {
+	margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid section img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    width: 160px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin-top: 0;
+    margin-bottom: 0;
+	padding: 0.25rem;
+}
+
+.list p  {
+	font-size:large;
+    margin: 0;
+    
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 2rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: rgb(111, 116, 104);
+}

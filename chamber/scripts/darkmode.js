@@ -1,23 +1,31 @@
-const ButtonImage = document.getElementById("ButtonImage");
-let imagenActual = 1;
+document.addEventListener("DOMContentLoaded", () => {
+  const ButtonImage = document.getElementById("ButtonImage");
+  let imagenActual = 1;
 
-ButtonImage.addEventListener("click", function () {
-  // Cambiar la clase del botón cuando se hace clic
-  document.body.classList.toggle("slytherin-mode");
-});
+  // This will load tje "dark mode if was selected before"
+  const darkModeSaved = localStorage.getItem("modo");
+  if (darkModeSaved === "slytherin-mode") {
+      document.body.classList.add("slytherin-mode");
+  }
 
-ButtonImage.addEventListener("click", () => {
-  
-  ButtonImage.style.opacity = 0; // Reducir la opacidad
-  setTimeout(() => {
-    if (imagenActual === 1) {
-      ButtonImage.src = "img/img2.webp";
-      imagenActual = 2;
+  ButtonImage.addEventListener("click", function () {
+      // change the mode
+      const modoActual = document.body.classList.toggle("slytherin-mode");
+
+      // save the mode pm the local storage
+      localStorage.setItem("modo", modoActual ? "slytherin-mode" : "");
+  });
+
+  ButtonImage.addEventListener("click", () => {
       
-    } else {
-      ButtonImage.src = "img/img1.webp";
-      imagenActual = 1;
-    }
-    ButtonImage.style.opacity = 1; // Restaurar la opacidad después del cambio
-  }, 100); // Espera 500 milisegundos antes de cambiar la imagen
+      setTimeout(() => {
+          if (imagenActual === 1) {
+              ButtonImage.src = "img/img2.webp";
+              imagenActual = 2;
+          } else {
+              ButtonImage.src = "img/img1.webp";
+              imagenActual = 1;
+          }
+      }, 100); // wait 100 mili-seconds before change the image
+  });
 });
