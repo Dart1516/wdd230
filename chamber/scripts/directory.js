@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
             const companyHTML = `
                 <section class="card">
-                    <img src="${image}" alt="${names}">
+                    <img src="${image}" alt="${names} loading="lazy"">
                     <h3>${names}</h3>
                     <p>Company Category: ${category}</p>
                     <p>Company Representative: ${legalRepresentative}</p>
