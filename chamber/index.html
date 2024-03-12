@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/banner.css">
     <title>São Paulo and the Chamber of Commerce</title>
   </head>
   <body>
@@ -49,6 +50,17 @@
     </nav>
   
     <main>
+      <div id="popupContainer" class="popup-container">
+        <div class="popup-banner">
+          
+          <div class="banner-image">
+            <span class="close" onclick="closeBanner()">❌</span>
+            <img src="img/banner1.webp" alt="Banner Image" class="responsive-image">
+          </div>
+          <p>Join us for our Chamber of Commerce meeting this Wednesday at 7:00 p.m.!</p>
+          <button> <a  href="join.html"> Join Us</a>  </button>
+        </div>
+      </div>
       <div class="banner">
         <div class="hero-container">
           <picture>
@@ -203,6 +215,8 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/weatherForecast.js"></script>
+    <script src="scripts/banner.js"></script>
+
 
   </body>
 
