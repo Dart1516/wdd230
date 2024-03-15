@@ -1,113 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-  HGWeather.initialize();
-});
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-var HGWeather = (function (e) {
-  var t = {};
-  function o(e, o, a, n) {
-    var s = new XMLHttpRequest(),
-      r =
-        t.options.endpoint +
-        "/?format=json-cors&key=" +
-        o +
-        (globals.byLocation ? "&user_ip=remote" : "") +
-        "&woeid=" +
-        a +
-        "&sdk_version=js" +
-        t.VERSION +
-        (n ? "&lat=" + n.coords.latitude + "&lon=" + n.coords.longitude : "");
-    function i() {
-      var o = "570d7d81";
-      (o.style.display = "block"), (o.innerText = t.messages.getDataError);
-    }
-    (s.onload = function () {
-      s.status >= 200 && s.status < 400
-        ? (function (o) {
-            var a = e.querySelectorAll("[data-weather]"),
-              n = e.querySelector('[data-weather="image"]'),
-              s = 0;
-            for (
-              e.className = t.options.defaultClass + " " + o.condition_slug,
-                n.style.display = "inline-block",
-                n.src =
-                  t.options.assetsEndpoint + "/images/" + o.img_id + ".png",
-                e.querySelector('[data-weather="message"]').style.display =
-                  "none";
-              s < a.length;
-              ++s
-            ) {
-              var r = a[s];
-              -1 !== t.options.accessibleData.indexOf(r.dataset.weather) &&
-                (r.innerText = o[r.dataset.weather]);
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.645&appid=9bdbd0d95ed9aa366457a019676f1adb&units=metric';
 
-            }
-            
-          })(JSON.parse(s.responseText).results)
-        : i(s.responseText);
-    }),
-      (s.onerror = i),
-      s.open("GET", r),
-      s.send();
+async function apiFetch() {
+try {
+  const response = await fetch(url);
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data); // testing only
+    displayResults(data); 
+  } else {
+      throw Error(await response.text());
   }
-  return (
-    (globals = {}),
-    (t.VERSION = "1.0.0"),
-    (t.options = {
-      accessibleData: [
-        "temp",
-        "description",
-        "date",
-        "time",
-        "city",
-        "humidity",
-        "wind_speedy",
-        "sunrise",
-        "sunset",
-        "city_name",
-        "condition_slug",
-      ],
-      assetsEndpoint: "https://assets.hgbrasil.com/weather",
-      defaultClass: "hg-weather",
-      developmentKey: "4697890e",
-      developmentWoeid: "455827",
-      endpoint: "https://api.hgbrasil.com/weather",
-      locationButtonSelector: ".get-location",
-      selector: ".hg-weather",
-    }),
-    (t.messages = {}),
-    (t.initialize = function (a, n) {
-      for (
-        var s = e.querySelectorAll(t.options.selector), r = 0;
-        r < s.length;
-        ++r
-      ) {
-        var i = s[r];
-        (currentLocationButton = i.querySelector(
-          t.options.locationButtonSelector
-        )),
-          (globals.key = a || i.dataset.key || t.options.developmentKey),
-          (globals.woeid = n || i.dataset.woeid || t.options.developmentWoeid),
-          globals.key == t.options.developmentKey &&
-            e.body.insertAdjacentHTML(
-              "afterbegin",
-              t.messages.developmentKeyWarning
-            ),
-          currentLocationButton
-            ? ((globals.byLocation = !0),
-              currentLocationButton.addEventListener("click", function (e) {
-                e.preventDefault(), t.getLocation(i);
-              }))
-            : (globals.byLocation = !1),
-          o(i, globals.key, globals.woeid, !1);
-      }
-    }),
-    (t.getLocation = function (e) {
-      navigator.geolocation
-        ? navigator.geolocation.getCurrentPosition(function (t) {
-            o(e, globals.key, globals.woeid, t);
-          })
-        : alert(t.messages.getLocationError);
-    }),
-    t
-  );
-})(document);
+} catch (error) {
+    console.log(error);
+}
+}
+
+apiFetch();
+
+function displayResults(data) {
+//✅ Format the output to show zero decimal points.
+// here we use .toFixed(0) but we could use Math.round(data.main.temp) or parseInt(data.main.temp)
+currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
+const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+let desc = data.weather[0].description;
+//✅ Capitalize each word of the weather description.
+desc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+weatherIcon.setAttribute('src', iconSrc);
+weatherIcon.setAttribute('alt', desc);
+captionDesc.textContent = `${desc}`;
+
+}

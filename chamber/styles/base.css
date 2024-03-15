@@ -186,7 +186,7 @@ button:hover {
 /*For the directory*/
 .grid {
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
     margin-left: 3rem;

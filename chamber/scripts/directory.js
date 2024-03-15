@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const response = await fetch(companiesURL);
             if (response.ok) {
                 const data = await response.json();
+                console.log(data); // testing only
                 displayCompanies(data.Companies);
             } else {
                 console.error("Error fetching data:", response.statusText);
@@ -35,12 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function displayCompanies(companies) {
-        display.innerHTML = ""; // Limpiar contenido existente
+        display.innerHTML = "";
     
         companies.forEach(company => {
-            const { names, category, addresses, phone, websiteURL, image, membershipLevel, legalRepresentative } = company;
+            const { names, category, addresses, 
+                phone, websiteURL, image, 
+                membershipLevel, legalRepresentative } = company;
     
-            // Acceder a los números de teléfono correctamente
+
             const phone1 = phone[0].phone1;
             const phone2 = phone[0].phone2;
     

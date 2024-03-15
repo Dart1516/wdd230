@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/harrypoterbutton.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/weather.css">
     <title>São Paulo and the Chamber of Commerce</title>
   </head>
   <body>
@@ -83,36 +84,81 @@
           </div>
         </div>
         <div class="card">
-          <h2>weather</h2>
+          <h2>Weather</h2>
           <hr />
-          <br />
-          <!-- Api sacada de  https://hgbrasil.com/status/weather  -->
-          <div class="hg-weather" data-key="570d7d81" data-woeid="455827">
-            <div>
-              <img
-                src="img/default-weather-image.webp"
-                alt="Dynamic weather image"
-                data-weather="image"
-              />
-            </div>
-            <div>
-              <span data-weather="message">Obtaining...<br /></span>
-              <span data-weather="city">Obtaining city</span>
-              <span data-weather="temp">00</span>º C<br />
-              <span data-weather="description">Obtaining time...</span><br />
-              Humidity
-              <span data-weather="humidity">Obtaining humidity...</span> %<br />
-              Sunrise: <span data-weather="sunrise">00:00</span> <br />
-              Sunset: <span data-weather="sunset">00:00</span><br />
-              wind_speedy: <span data-weather="wind_speedy">-- km/h</span><br />
-              wind_chill: <span data-weather="wind_chill">-- km/h</span><br />
-              <p>Calculate Wind Chill in Fahrenheit: <span id="windchillCalculation"></span></p>
-              <input id="TempInFahrenheit" type="text" placeholder="Enter temperature in Fahrenheit">
-              <input id="WindSpeedInMiles" type="text" placeholder="Enter wind speed in miles">
-              <button id="button">Submit</button>
-            </div>
-          </div>
+          <div>
+            <div><!-- Today-->
+                <div class="currentTimeAndWeatherType">
+                    <div>
+                        <img id="weather-icon">
+                        <div class="celciusRight">
+                            <div>
+                                <div class="celcius" id="current-temp"></div>
+                            </div>
+                        </div>
+                        <div class="anotherWeatherInfo">
+                            <div id="weather-description"></div>
+                            <div id="weather-details"></div>
+                        </div>
+                    </div>
+                    <div class="currentTimeAndWeatherType2">
 
+                        <div id="weather-time"></div>
+                        <div id="weather-location"></div>
+                    </div>
+                </div>
+            </div>
+            <div><!-- next 3 days -->
+                <div class="forecastInline" id="day1">
+                    <div aria-label="sábado"></div>
+                    <img id="img_1">
+                    <div>
+                        <div class="degreeInline">
+                            <span id="day1-min-temp"></span>
+                            <span>°C</span>
+                        </div>
+                        <div class="degreeInlineDark degreeInline2">
+                            <span id="day1-max-temp"></span>
+                            <span>°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecastInline" id="day2">
+                    <div aria-label="domingo"></div>
+                    <img id="img_2">
+                    <div>
+                        <div class="degreeInline">
+                            <span id="day2-min-temp"></span>
+                            <span>°C</span>
+                        </div>
+                        <div class="degreeInlineDark degreeInline2">
+                            <span id="day2-max-temp"></span>
+                            <span>°C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecastInline" id="day3">
+                    <div aria-label="lunes"></div>
+                    <img id="img_3">
+                    <div>
+                        <div class="degreeInline">
+                            <span id="day3-min-temp"></span>
+                            <span>°C</span>
+                        </div>
+                        <div class="degreeInlineDark degreeInline2">
+                            <span id="day3-max-temp"></span>
+                            <span>°C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+          <p>Calculate Wind Chill in Fahrenheit: <span id="windchillCalculation"></span></p>
+          <input id="TempInFahrenheit" type="text" placeholder="Enter temperature in Fahrenheit">
+          <input id="WindSpeedInMiles" type="text" placeholder="Enter wind speed in miles">
+          <button id="button">Submit</button>
+        </div>
         </div>
       </section>
 
@@ -156,7 +202,7 @@
     <script src="scripts/showmore.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherForecast.js"></script>
 
   </body>
 
