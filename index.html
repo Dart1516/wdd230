@@ -2,108 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="form to join us to the chamber">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="author" content="David Puche">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="São Paulo and the chamber of Secrets">
+    <meta name="description" content="This is David Puche home Page and and future portfolio, with this page we will add all the content of the activities given on wdd230.">
+    <link rel="icon" type="image/icon" href="images/favicon.ico" >
+    <title>David Puche - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/hamburger-Menu.css" >
+    <link rel="stylesheet" href="styles/absolute-Position-Temple-Hero.css">
+    <meta property="og:title" content="My Portfolio" >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dart1516.github.io/wdd230/">
-    <meta property="og:image" content="https://dart1516.github.io/wdd230/images/Chamber-Secrets-logo.png">
-    <meta property="fb:app_id" content="2593818390695362">
-    <meta property="og:description" content="this is for facebook data">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/hamburger-Menu.css">
-    <link rel="stylesheet" href="styles/harrypoterbutton.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/form.css">
-    <title>São Paulo and the Chamber of Commerce  - Join us</title>
+    <meta property="og:url" content="https://dart1516.github.io/wdd230/" >
+    <meta property="og:image" content="https://dart1516.github.io/wdd230/images/me.jpg" >
+    <meta property="fb:app_id" content="2593818390695362" >
+    <meta property="og:description" content="this is for facebook data" >
+    <meta name="theme-color" content="only light">
   </head>
   <body>
     <header>
-      <img src="img/Chamber-Secrets-logo.webp" alt="logo">
-      <h1>Join to the Chamber </h1>
-      <div id="characterButton" class="character1">
-        <div class="accessory-1"></div>
-        <div class="mouth"></div>
-        <div class="eyes"></div>
-        <div class="hair"></div>
-        <div class="accessory-2"></div>
-        <div class="accessory-3"></div>
-      </div>
+      <img class="image_small" src="images/me.webp" alt=" a picture from me"  width="150" height="150">
+      <h1>David Puche</h1>
     </header>
     <nav>
       <button id="menu" aria-label="Menu Button to open the Nav Menu"></button>
-      <div  class="button-position gryffindor-mode" >
-        <img src="img/img1.webp" alt="Botón" id="ButtonImage"></div>
-        <ul class="navigation">
-          <li><a class="color_link" href="index.html">Home</a></li>
-          <li><a class="color_link" href="discover.html">Discover</a></li>
-          <li><a class="color_link" href="directory.html"> Directory</a></li>
-          <li><a class="color_link" href="join.html">Join</a></li>
+      <ul class="navigation">
+        <li><a class="color_link" href="#">Home</a></li>
+        <li><a class="color_link" href="lesson03/chamber-site-plan.html">Site Plan</a> </li>
+        <li><a class="color_link" href="chamber/index.html"> Chamber</a></li>
+        <li><a class="color_link" href="https://www.byui.edu/">BYU-Idaho</a></li>
+        <li> <a class="color_link" href="https://www.churchofjesuschrist.org/study/scriptures" >Scripture</a > </li>
       </ul>
     </nav>
-   
-    <main>
-      <form method="get" action
-      ="thankyou.html" class="wf1">
-      <fieldset>
-        <legend>Applicant Information</legend>
-        <label> First name* <input type="text" id="fname" name="fname" autocomplete="given-name" required> </label>
-        <label> Last name* <input type="text" id="lname" name="lname" autocomplete="family-name" required> </label>
-        <label> Title or position* <input type="text" id="position" name="position" autocomplete="work" pattern="[a-zA-Z\- ]{7,}" title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" required> </label>
-        <label >Email* <input type="email" id="email" name="email" placeholder="something@example.com" title="A valid email address." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email" required> </label>
-        <label> Phone <input type="tel" name="phone" placeholder="+55 11 123456789" autocomplete="tel" required > </label>
-        <label> Business/Organization's name <input type="text" id="oname" name="oname" autocomplete="organization-title" required> </label>
-      </fieldset>
-      <section class="additional-cards">
-        <fieldset>
-          <legend> membership level</legend>
-          <div>Choose you Plan </div>
-          <label ><input type="radio" name="membership" id="non-profit" value="non-profit"> NP Membership is for non-profit organizations and there is no fee</label>
-          <label ><input type="radio" name="membership" id="bronze" value="bronze"> Bronze Membership $50 per month</label>
-          <label ><input type="radio" name="membership" id="silver" value="silver"> Silver Membership $150 per month</label>
-          <label ><input type="radio" name="membership" id="gold" value="gold"> Gold Membership $300 per month</label>
-        </fieldset>
-        <div >
-          <h2>Membership benefits</h2>
-          <div class="card smaller-height"></div>
-          
-        </div>
-    </section>
-      
-    <fieldset>
-      <legend>Business/Organization's description</legend>
-      <label for="businessDescription">Describe your business or organization:</label>
-      <textarea id="businessDescription" name="businessDescription"></textarea>
-  </fieldset>
-     
-     
+    <div class="hero">
+      <picture >
+        <source srcset="images/hero-small.webp" media="(max-width: 641px)" >
+        <source srcset="images/hero-large.webp" media="(max-width: 1200px)" >
+        <img src="images/hero-large.webp" alt="table setting" width="278" height="800">
+    </picture>
+    <div class="herolabel">  <h2>São Paulo Temple</h2> </div>
+    </div>
     
-      <input type="submit" value="Join us" class="color_link">
-      <input type="hidden" name="date/time" id="date-time" >
-        
-    </form>
+    <main>
+    <h2>WDD 230: Web Frontend Development</h2>
+      <hr>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ul id="data">
+         
+        </ul>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <div class="card2">
+          <div >
+            <p>
+              <figure>
+                <img id="weather-icon" src="" alt="" />
+                
+              </figure>  <span id="current-temp"></span> -  <figcaption></figcaption><figure>
+              <img id="weather-icon" src="" alt="" />
+              
+            </figure>
+            </p>
+            
+            <div>
+              <span class="label">Page Visits: </span><span class="visits"></span>
+            </div>
+        </div>
+      </div>
+      </section>
+      <section class="card">
+        <h4 class="mapTitle">Map</h4>
+        <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3654.900253215963!2d-46.61239782391952!3d-23.64374296462547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbr!4v1706254946403!5m2!1ses-419!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="São Paulo Map"
+        ></iframe>
+      </div>
+      </section>
     </main>
     <footer>
-      <hr >
       <p>
-        © <span id="year"> </span> São Paulo and the chamber os secrets | David
-        Puche | WDD 230 Project | Last Modification:
-        <span id="lastModified"></span>
+        © <span id="year"></span> <br>
+        David Daniel Puche Ferrer <br>
+        Brazil
+        <img class="brazilFlag" src="images/brazilFlag1.webp" alt="Brazil Flag" width="50" height="30">
       </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <!-- This is here because I didn't want to create a new js file for this-->
-    <script > 
-      const dateTimeHidden = document.getElementById('date-time');
-      const currentDateTime = Date.now();
-      dateTimeHidden.value = currentDateTime;
-      console.log(dateTimeHidden.value)
-  </script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
     <script src="scripts/hamburger-Menu.js"></script>
-    <script src="scripts/form.js"></script>
-    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/pageVisits.js"></script>
   </body>
 </html>
