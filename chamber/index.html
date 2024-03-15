@@ -26,7 +26,7 @@
   </head>
   <body>
     <header>
-      <img src="img/Chamber-Secrets-logo.webp" alt="logo" />
+      <img src="img/Chamber-Secrets-logo.webp" alt="logo">
       <h1>São Paulo and the Chamber of Commerce</h1>
       <div id="characterButton" class="character1">
         <div class="accessory-1"></div>
@@ -58,7 +58,7 @@
             <img src="img/banner1.webp" alt="Banner Image" class="responsive-image">
           </div>
           <p>Join us for our Chamber of Commerce meeting this Wednesday at 7:00 p.m.!</p>
-          <button> <a  href="join.html"> Join Us</a>  </button>
+          <button onclick="window.location.href='join.html'">Join</button>
         </div>
       </div>
       <div class="banner">
@@ -67,19 +67,19 @@
             <source srcset="img/banner-small.webp" media="(max-width: 480px)">
             <source srcset="img/banner-medium.webp" media="(max-width: 768px)">
             <source srcset="img/banner-large.webp" media="(max-width: 1600px)">
-            <img src="img/banner-large.webp" alt="table setting" width="1278px" height="800px">
+            <img src="img/banner-large.webp" alt="table setting" width="1278" height="800">
           </picture>
         </div>
         <div class="heroContent">
           <h2>We help you to success</h2>
           <p> join forces to our community to acomplish you goals</p>
-          <button> <a  href="join.html"> Join Us</a>  </button>
+          <button onclick="window.location.href='join.html'">Join</button>
         </div>
       </div>
       <section class="additional-cards">
         <div class="card">
           <h2>Events</h2>
-          <hr />
+          <hr >
           <h3>Harry Potter items auction</h3>
           <p>
             Great auction of the best Harry Potter items that can be found in
@@ -97,12 +97,12 @@
         </div>
         <div class="card">
           <h2>Weather</h2>
-          <hr />
+          <hr >
           <div>
             <div><!-- Today-->
                 <div class="currentTimeAndWeatherType">
                     <div>
-                        <img id="weather-icon">
+                        <img id="weather-icon" src="https://openweathermap.org/img/w/X.png" alt="image current day">
                         <div class="celciusRight">
                             <div>
                                 <div class="celcius" id="current-temp"></div>
@@ -122,8 +122,8 @@
             </div>
             <div><!-- next 3 days -->
                 <div class="forecastInline" id="day1">
-                    <div aria-label="sábado"></div>
-                    <img id="img_1">
+                    <div ></div>
+                    <img id="img_1" src="https://openweathermap.org/img/w/X.png" alt="image first day">
                     <div>
                         <div class="degreeInline">
                             <span id="day1-min-temp"></span>
@@ -136,8 +136,8 @@
                     </div>
                 </div>
                 <div class="forecastInline" id="day2">
-                    <div aria-label="domingo"></div>
-                    <img id="img_2">
+                    <div ></div>
+                    <img id="img_2" src="https://openweathermap.org/img/w/X.png" alt="image second day">
                     <div>
                         <div class="degreeInline">
                             <span id="day2-min-temp"></span>
@@ -150,8 +150,8 @@
                     </div>
                 </div>
                 <div class="forecastInline" id="day3">
-                    <div aria-label="lunes"></div>
-                    <img id="img_3">
+                    <div ></div>
+                    <img id="img_3" src="https://openweathermap.org/img/w/X.png" alt="image third day">
                     <div>
                         <div class="degreeInline">
                             <span id="day3-min-temp"></span>
@@ -202,7 +202,7 @@
       </section>
     </main>
     <footer>
-      <hr />
+      <hr>
       <p>
         © <span id="year"> </span> São Paulo and the chamber os secrets | David
         Puche | WDD 230 Project | Last Modification:
