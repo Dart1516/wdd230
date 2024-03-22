@@ -27,7 +27,7 @@ function updateMemberSpotlights(members) {
             <h3>${member.names}</h3>
             <p>${member.legalRepresentative}</p>
             <p>${member.phone[0].phone1}</p>
-            <p>${member.websiteURL}</p>
+            <a class="color_link" href= "https://www.churchofjesuschrist.org/">${member.websiteURL}</a>
         `;
         container.appendChild(card);
     });

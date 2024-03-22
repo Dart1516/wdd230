@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>Company Membership Level: ${membershipLevel}</p>
                     <p>Phone Numbers: ${phone1} / ${phone2}</p>
                     <p>Company Address: ${addresses}</p>
-                    <a  class="color_link" href="${websiteURL}" target="_blank">${websiteURL}</a>
+                    <a  class="color_link" href="https://www.churchofjesuschrist.org/" target="_blank">${websiteURL}</a>
                 </section>
             `;
             display.innerHTML += companyHTML;
