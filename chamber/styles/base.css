@@ -10,8 +10,8 @@ header {
 
 }
 
-header img {
-    width: 20%;
+header a img {
+    width: 100%;
 }
 
 .color_link {
